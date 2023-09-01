@@ -1,5 +1,5 @@
 
 
-const main = () => <h1>Lorem, ipsum dolor.</h1>
+const main = () => <h1>Home</h1>
 
 export default main
