@@ -14,8 +14,8 @@ const mainLayout = ({children}:{children:React.ReactNode}) => {
       <head><Bootstrap/></head>
       <body>
         <div className="container">
-          <div className="row"><div className="col"><LabelLinkComponent/></div></div>
-          <div className="row"><div className="col">{children}</div></div>
+          <div className="row my-3"><div className="col"><LabelLinkComponent/></div></div>
+          <div className="row my-3"><div className="col">{children}</div></div>
         </div>
       </body>
     </html>
