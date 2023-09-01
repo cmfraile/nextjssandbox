@@ -1,3 +1,5 @@
+import LabelLinkComponent from "./components/linkbar";
+import './styles/global.css';
 
 const Bootstrap = () => 
   <>
@@ -5,11 +7,19 @@ const Bootstrap = () =>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
   </>
 
-export default function RootLayout({children}:{children:React.ReactNode}){
+const mainLayout = ({children}:{children:React.ReactNode}) => {
   return (
     <html lang="en">
+      <title>Sandbox</title>
       <head><Bootstrap/></head>
-      <body>{children}</body>
+      <body>
+        <div className="container">
+          <div className="row"><div className="col"><LabelLinkComponent/></div></div>
+          <div className="row"><div className="col">{children}</div></div>
+        </div>
+      </body>
     </html>
   )
 }
+
+export default mainLayout
