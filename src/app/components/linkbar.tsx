@@ -7,7 +7,7 @@ const labelCraft = (label:string):label => {
     return {label,link:`/${label}`}
 };
 
-const labels:label[] = [ labelCraft('home') , labelCraft('about') , labelCraft('post') ]
+const labels:label[] = [ labelCraft('home') , labelCraft('list') , labelCraft('detail') ]
 
 const LabelLinkComponent = () => 
     labels.map((x,i) => 

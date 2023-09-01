@@ -3,20 +3,24 @@
 import { useState } from "react"
 import { digimon } from "../interfaces/digimon"
 import styles from '../styles/linkbar.module.css';
+import Link from "next/link";
 
-const DigiButton = ({digimon}:{digimon:digimon}) => {
+interface digibutton {digimon:digimon};
+
+const DigiButton = ({ digimon }:digibutton) => {
 
     const [ unused , setIsUnused ] = useState<boolean>(true);
 
     return(
         <button type="button" 
-                className={`btn ${ (unused) ? 'btn-primary' : 'btn-danger' } ${styles.linkbar}`}
-                onClick={() => setIsUnused(v => !v)}
-        >{digimon.name}</button>
+                className={`btn ${ (unused) ? 'btn-secondary' : 'btn-danger' } ${styles.linkbar}`}
+                onClick={ () => setIsUnused(v => !v) }
+        > {digimon.name} </button>
     );
 
 }
 
-const DigiButtonRendering = ({digimonList}:{digimonList:digimon[]}) => digimonList.map( (x,i) => <DigiButton digimon={x} key={i}/>);
+//const DigiDetail = ({ digimon }:digibutton) => <Link href={}></Link>
 
-export default DigiButtonRendering
+
+export { DigiButton }
