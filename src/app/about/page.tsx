@@ -1,3 +1,3 @@
-const main = () => <h1>About</h1>
+const main = () => <h1>about</h1>
 
 export default main
