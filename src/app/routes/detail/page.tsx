@@ -1,5 +1,18 @@
+<<<<<<< HEAD:src/app/routes/detail/page.tsx
 import query from "@/app/components/query";
 import { digimon } from "@/app/interfaces/digimon";
+=======
+import query from "@/components/query";
+import { digimon } from "@/interfaces/digimon";
+import Link from "next/link";
+
+const ToDetail = ({digimon}:{digimon:digimon}) =>
+    <Link
+        href={`/detail/${digimon.name}`}
+    >
+        <button type="button" className="btn btn-secondary m-1"> { digimon.name } </button>
+    </Link>
+>>>>>>> desacople:src/app/detail/page.tsx
 
 const main = async() => {
 
@@ -7,7 +20,7 @@ const main = async() => {
 
     return  <div>
                 <h3> Para entrar en detalle : </h3>
-                { digimon.slice(0,10).map(x => <p>{x.name}</p> ) }
+                { digimon.slice(0,10).map( (x,i) => <ToDetail key={i} digimon={x}/> ) }
             </div> ;
 
 }
