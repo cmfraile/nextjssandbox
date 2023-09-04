@@ -7,7 +7,7 @@ const labelCraft = (label:string):label => {
     return {label,link:`/${label}`}
 };
 
-const labels:label[] = ['home','list','detail'].map(labelCraft) ;
+const labels:label[] = ['home','list','detail','image'].map(labelCraft) ;
 
 const LabelLinkComponent = () => 
     labels.map((x,i) => 
