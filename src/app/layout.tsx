@@ -1,10 +1,5 @@
-<<<<<<< HEAD:src/app/routes/layout.tsx
-import LabelLinkComponent from "../components/linkbar";
-import './styles/global.css';
-=======
 import LabelLinkComponent from '@/components/linkbar';
 import '../styles/global.css'
->>>>>>> desacople:src/app/layout.tsx
 
 const Bootstrap = () => 
   <>

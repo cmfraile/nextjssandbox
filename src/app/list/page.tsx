@@ -1,12 +1,6 @@
-<<<<<<< HEAD:src/app/routes/list/page.tsx
-import query from "../../components/query"
-import { digimon } from "../../interfaces/digimon"
-import { DigiButton } from "../../components/digimon";
-=======
 import query from "@/components/query";
 import { digimon } from "../../interfaces/digimon"
 import { DigiButton } from "@/components/digimon";
->>>>>>> desacople:src/app/list/page.tsx
 
 const main = async() => {
 
