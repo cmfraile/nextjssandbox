@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath:'/routes',
-}
+const nextConfig = {}
 
 module.exports = nextConfig
