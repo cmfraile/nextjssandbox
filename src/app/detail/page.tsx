@@ -1,5 +1,5 @@
-import query from "../components/query"
-import { digimon } from "../interfaces/digimon";
+import query from "@/components/query";
+import { digimon } from "@/interfaces/digimon";
 
 const main = async() => {
 
@@ -7,7 +7,7 @@ const main = async() => {
 
     return  <div>
                 <h3> Para entrar en detalle : </h3>
-                { digimon.slice(0,10).map(x => <p>{x.name}</p> ) }
+                { digimon.slice(0,10).map( (x,i) => <p key={i}>{x.name}</p> ) }
             </div> ;
 
 }
