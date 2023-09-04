@@ -1,6 +1,6 @@
-import query from "../components/query"
-import { digimon } from "../interfaces/digimon"
-import { DigiButton } from "../components/digimon";
+import query from "../../components/query"
+import { digimon } from "../../interfaces/digimon"
+import { DigiButton } from "../../components/digimon";
 
 const main = async() => {
 

@@ -1,5 +1,5 @@
-import query from "../components/query"
-import { digimon } from "../interfaces/digimon";
+import query from "@/app/components/query";
+import { digimon } from "@/app/interfaces/digimon";
 
 const main = async() => {
 

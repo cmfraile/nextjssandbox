@@ -1,4 +1,4 @@
-import LabelLinkComponent from "./components/linkbar";
+import LabelLinkComponent from "../components/linkbar";
 import './styles/global.css';
 
 const Bootstrap = () => 
